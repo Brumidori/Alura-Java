@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/bytevank-encapsulado.iml" filepath="$PROJECT_DIR$/bytevank-encapsulado.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bytebank-encapsulado.iml" filepath="$PROJECT_DIR$/bytebank-encapsulado.iml" />
     </modules>
   </component>
 </project>
