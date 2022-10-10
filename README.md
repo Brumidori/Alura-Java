@@ -1,9 +1,10 @@
 # Alura-Java
-Repositório das aulas da Alura sobre Java. 
+Repositório dos cursos da Alura sobre Java. 
+Documentação do conteúdo.
 
-<li>
-  <ul>Curso 1: Java Orientação a Objetos;</ul>
+<ul>
+  <li>Curso 1: Java Orientação a Objetos;</li>
 
-<ul>Curso 2: Java Polimorfismo </ul>
+<li>Curso 2: Java Polimorfismo </li>
   
-  </li>
+  </ul>
