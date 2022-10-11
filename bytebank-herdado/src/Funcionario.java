@@ -1,4 +1,5 @@
-public class Funcionario {
+//não pode instanciar desta classe,pq é abstrata - reune caracteristicas/atributos e metodos comuns aos objs
+public abstract class Funcionario {
     private String nome;
     private String cpf;
     protected double salario; //publico para as classes filhas
@@ -7,9 +8,8 @@ public class Funcionario {
 
     }
 
-    public double getBonificacao(){
-        return this.salario * 0.05;
-    }
+    //metodo sem corpo, nao ha implementacao
+    public abstract double getBonificacao();
 
     public String getNome() {
         return nome;

@@ -1,14 +1,12 @@
-//herda de Funcionario - atributos e metodos, mas nao é obrigatório
-//nao herda construtores
-//assina contrato com Autenticavel
-public class Gerente extends Funcionario implements Autenticavel {
+public class Administrador extends Funcionario implements Autenticavel {
 
+    @Override
     public double getBonificacao() {
-        return super.salario; //super olha para a classe mae
+        return 50;
     }
 
     private AtenticacaoImpl impl;
-    public Gerente (){
+    public Administrador (){
         AtenticacaoImpl impl = new AtenticacaoImpl();
     }
     @Override

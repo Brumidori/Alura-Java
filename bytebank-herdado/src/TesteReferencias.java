@@ -7,8 +7,6 @@ public class TesteReferencias {
        // g1.autentica(2222); - nao funciona pq g1 é funcionario nao gerente
         System.out.println(nome);
 
-        Funcionario f = new Funcionario();
-        f.setSalario(2000.0);
         Gerente g2 = new Gerente();
         g2.setSalario(5000.0);
         EditorVideo ev = new EditorVideo();
@@ -16,7 +14,6 @@ public class TesteReferencias {
 
         ControleBonificacao controle = new ControleBonificacao();
         controle.registra(g2);
-        controle.registra(f);
         controle.registra(ev);
 
         System.out.println(controle.getSoma());
