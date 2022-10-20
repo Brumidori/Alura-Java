@@ -1,6 +1,9 @@
-public abstract class Conta {
+package br.com.bytebank.banco.modelo;
 
-    protected double saldo;
+// se nao declarado o modificador de acesso (public/private) o valor default é private package
+ public abstract class Conta {
+
+     protected double saldo; 
     private int agencia;
     private int numeroCc;
     private Cliente titular;
@@ -14,7 +17,7 @@ public abstract class Conta {
         this.agencia = agencia;
         this.numeroCc = numeroCc;
         Conta.total++;
-        //System.out.println("O total de contas é " + Conta.total);
+        //System.out.println("O total de contas é " + br.com.bytebank.banco.modelo.Conta.total);
     }
 
     public Conta() {
