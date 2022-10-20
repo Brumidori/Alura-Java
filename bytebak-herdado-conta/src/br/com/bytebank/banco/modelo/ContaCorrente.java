@@ -1,5 +1,7 @@
+package br.com.bytebank.banco.modelo;
+
 //não herda construtor - herda atributos e métodos
-public class ContaCorrente extends Conta implements Tributavel{
+public class ContaCorrente extends Conta implements Tributavel {
     //precis de um construtor - mesmo o padrão precisa de um método (super())- que precisa ser explicito na mãe
     public ContaCorrente(int agencia, int numeroCc) {
         super(agencia, numeroCc);
