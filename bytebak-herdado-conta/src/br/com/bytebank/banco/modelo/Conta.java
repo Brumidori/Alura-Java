@@ -1,8 +1,9 @@
 package br.com.bytebank.banco.modelo;
 
-public abstract class Conta {
+// se nao declarado o modificador de acesso (public/private) o valor default é private package
+ public abstract class Conta {
 
-    protected double saldo;
+     protected double saldo; 
     private int agencia;
     private int numeroCc;
     private Cliente titular;
