@@ -1,9 +1,15 @@
 package br.com.bytebank.banco.modelo;
 
 // se nao declarado o modificador de acesso (public/private) o valor default é private package
+
+/**
+ * @param agencia
+ * @param numero
+ */
+
  public abstract class Conta {
 
-     protected double saldo; 
+     protected double saldo;
     private int agencia;
     private int numeroCc;
     private Cliente titular;
@@ -28,6 +34,11 @@ package br.com.bytebank.banco.modelo;
 
     public abstract void deposita (double valor);
 
+    /**
+     * Valor precisa ser menor ou igual ao saldo
+     * @param valor
+     * @throws SaldoInsuficienteException
+     */
     public void saca (double valor) throws SaldoInsuficienteException {
 
         if (this.saldo < valor) {
