@@ -92,6 +92,12 @@ package br.com.bytebank.banco.modelo;
 
     //static indica que método é da classe (não precisa instanciar objeto para chamar)
     public static int getTotal() {
+
         return Conta.total;
+    }
+
+    @Override
+    public String toString() {
+        return "Numero: " + this.numeroCc + ", Agencia: " + this.agencia;
     }
 }
