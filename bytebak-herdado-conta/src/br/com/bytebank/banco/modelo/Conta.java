@@ -30,6 +30,8 @@ package br.com.bytebank.banco.modelo;
     }
 
     public Conta(int agencia, int numeroCc) {
+        this.agencia = agencia;
+        this.numeroCc = numeroCc;
     }
 
     public abstract void deposita (double valor);

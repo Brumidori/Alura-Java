@@ -13,9 +13,9 @@ public class Teste {
 //		System.out.println(3);
 //		System.out.println(false);
 
-        Object cc = new ContaCorrente(22, 33);
-        Object cp = new ContaPoupanca(33, 22);
-        Object cliente = new Cliente();
+        Conta cc = new ContaCorrente(22, 33);
+        Conta cp = new ContaPoupanca(33, 22);
+        Cliente cliente = new Cliente();
 
         System.out.println(cc);
         System.out.println(cp);
@@ -27,7 +27,7 @@ public class Teste {
     static void println(int a) {}
     static void println(boolean valor) {}
 
-    static void println(Object referencia) {
+    static void println(Conta referencia) {
     }
 
 }
