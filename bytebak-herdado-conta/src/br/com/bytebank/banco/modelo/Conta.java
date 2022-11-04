@@ -30,6 +30,8 @@ package br.com.bytebank.banco.modelo;
     }
 
     public Conta(int agencia, int numeroCc) {
+        this.agencia = agencia;
+        this.numeroCc = numeroCc;
     }
 
     public abstract void deposita (double valor);
@@ -92,6 +94,26 @@ package br.com.bytebank.banco.modelo;
 
     //static indica que método é da classe (não precisa instanciar objeto para chamar)
     public static int getTotal() {
+
         return Conta.total;
     }
+
+    @Override
+    public String toString() {
+        return "Numero: " + this.numeroCc + ", Agencia: " + this.agencia;
+    }
+
+    public boolean equals(Conta outra) {
+
+        if(this.agencia != outra.agencia) {
+            return false;
+        }
+
+        if(this.numeroCc != outra.numeroCc) {
+            return false;
+        }
+
+        return true;
+    }
+
 }
