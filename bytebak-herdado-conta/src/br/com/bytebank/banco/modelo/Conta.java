@@ -102,4 +102,18 @@ package br.com.bytebank.banco.modelo;
     public String toString() {
         return "Numero: " + this.numeroCc + ", Agencia: " + this.agencia;
     }
+
+    public boolean equals(Conta outra) {
+
+        if(this.agencia != outra.agencia) {
+            return false;
+        }
+
+        if(this.numeroCc != outra.numeroCc) {
+            return false;
+        }
+
+        return true;
+    }
+
 }
