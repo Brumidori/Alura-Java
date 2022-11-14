@@ -9,6 +9,7 @@ Documentação do conteúdo.
 
 <li>Curso 3: Java Exceções - lançar e controlar exceçoes, checked/uncked, genérica, finally, try-with-resources </l1>
 <li>Curso 4: Java Lang - organizando as classes em pacotes, modificadores de acesso, java.lang, String e Object </l1>
+<li>Curso 5: Java Util - Arrays, ArrayList e Generics, Equals, Vector, Wrappers, Ordenação de listas, classes anonimas e Lambda </l1>
 
   
   </ul>
