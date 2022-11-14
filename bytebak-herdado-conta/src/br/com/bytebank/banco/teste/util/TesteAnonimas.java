@@ -5,6 +5,7 @@ import br.com.bytebank.banco.modelo.ContaCorrente;
 import br.com.bytebank.banco.modelo.ContaPoupanca;
 
 import java.util.*;
+import java.util.function.Consumer;
 
 public class TesteAnonimas {
 
@@ -47,32 +48,26 @@ public class TesteAnonimas {
         //function Object
         //ComparadorNumeroDaConta2 comparator = new ComparadorNumeroDaConta2();
 
-        lista.sort(new Comparator<Conta>() { //classe anonima
-
-            @Override
-            public int compare(Conta o1, Conta o2) {
-                return Integer.compare(o1.getNumeroCc(), o2.getNumeroCc());
-            }
-        });
+        lista.sort( //lambda
+                ( o1, o2) -> Integer.compare(o1.getNumeroCc(), o2.getNumeroCc())
+        );
 
         System.out.println("com numero comparator: ");
         for (Conta conta : lista) {
             System.out.println(conta);
         }
 
-        lista.sort( new Comparator<Conta>(){//classe anonima - criada no bin, sem precisar criar classe autonoma
-            @Override
-            public int compare(Conta o1, Conta o2) {
+        lista.sort( ( o1,  o2) ->{
                 String nomeC1 = o1.getTitular().getNome();
                 String nomeC2 = o2.getTitular().getNome();
 
                 return nomeC1.compareTo(nomeC2);
             }
-        });
+        );
+
         System.out.println("com titular comparator ");
-        for (Conta conta : lista) {
-            System.out.println(conta + ", " + conta.getTitular().getNome());
-        }
+
+        lista.forEach((conta) -> System.out.println(conta + ", " + conta.getTitular().getNome()));
     }
 }
 
